@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     const getActivity = async () => {
       try {
-        const response = await axios.get('https://w24hwbackend.onrender.com');
+        const response = await axios.get('https://w24hwbackend.onrender.com/api/Acitvity');
         setActivity(response.data); // 받아온 데이터로 상태 업데이트
       } catch (error) {
         console.error("Error fetching data:", error);
